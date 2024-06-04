@@ -152,7 +152,12 @@ class Ticker {
         }
         loop = false;
     }
-    //
+    /**
+     * Gets time that 'start' method of 'this' Ticker has been running.
+     * Returns time in nano-seconds
+     * @return how long we have run 'start' methd in Ticker in nano-seconds.
+     * @return 0 if start has not been run yet.
+    */
     public long getRunTime() {
         if (!started) {
             return 0;
