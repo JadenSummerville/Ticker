@@ -1,3 +1,4 @@
+
 /**
  * A Ticker is an class that will run other classes over time for you. Simply Make your class extent an Entity,
  * and then you may Overide the methods start, update, and remove. The class will start by running your entitiy
