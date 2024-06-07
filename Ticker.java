@@ -6,7 +6,7 @@
  * Ticker is to be discarded when loop is terminated.
 */
 import java.util.HashSet;
-class Ticker {
+public class Ticker {
     // Keeps track of all entities present
     private final HashSet<Entity> entities;
     // Checks if the loop has terminated (even if loop has not begun has it terminated?)
@@ -23,7 +23,7 @@ class Ticker {
     /**
      * Initiates an instance of a Ticker with 60 FPS.
     */
-    Ticker(){
+    public Ticker(){
         this(60);
     }
     /**
@@ -31,7 +31,7 @@ class Ticker {
      * 
      * @param FPS the FPS of the application
     */
-    Ticker(double FPS) {
+    public Ticker(double FPS) {
         this.FPS = FPS;
         this.entities = new HashSet<>();
         checkRep();
