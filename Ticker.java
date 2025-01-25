@@ -16,7 +16,7 @@ public class Ticker {
     private long startTime;
 
     private final double FPS;
-    private static final long second = 1_000_000_000;
+    private static final long SECOND = 1_000_000_000;
 
     private final static boolean DEBUG = true;
 
@@ -99,8 +99,8 @@ public class Ticker {
         long offset = startTime;
         while (loop) {
             long currentTime = System.nanoTime();
-            if (currentTime - offset >= second / FPS) {
-                offset += second / FPS;
+            if (currentTime - offset >= SECOND / FPS) {
+                offset += SECOND / FPS;
             } else {
                 continue;
             }
